@@ -1,0 +1,452 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+img {
+  // max-width: 50vw;
+  // max-height: 25vw;
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  // max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  margin: 10px auto;
+  float: right;
+}
+
+#greeting {
+  margin: 10px auto;
+  padding: 10px 60px;
+  border: 1px solid #222;
+}
+
+#greeting:empty {
+  display: none;
+}
+#MainOne{
+  margin-top: 150px;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+#ConnectBtn{
+  border: 2px solid blue;
+  width:150px ;
+  height: 40px;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  font-family: sans-serif;
+  font-size: 27px;
+  padding: 5px;
+  margin-left: 1000px;
+  margin-top: 30px;
+}
+#ConnectBtn:hover{
+  box-shadow: 2px 2px 40px 20px rgba(0, 0, 255, 0.7);
+}
+#MainOne{
+  margin-top: 70px;
+}
+#PrincipalText{
+  color: white;
+}
+#ProfileBtn{
+  border: 2px solid blue;
+  width:150px ;
+  height: 40px;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  font-family: sans-serif;
+  font-size: 27px;
+  padding: 5px;
+  margin-left: 1200px;
+  position: absolute;
+  top: 44px;
+  right: 100px;
+}
+#MintBtn{
+  border: 2px solid black;
+  width: 140px;
+  height: 40px;
+  // margin-left: 700px;
+  border-radius: 10px;
+  background-color: bisque;
+  filter: drop-shadow(1px 1px 20px bisque);
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+#inputs{
+  margin-top: 90px;
+  line-height: 3;
+  list-style: none;
+}
+#MainHead{
+  // border: 2px solid black;
+  width: 700px;
+  line-height: 2;
+  margin-left: 0px;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  text-align: center;
+}
+input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: white;
+}
+#startdate,#EndDate{
+  background-color: white;
+  color: black;
+}
+#ImgCerti{
+  height: 550px;
+  margin-top: -430px;
+  margin-left: 700px;
+ width: 650px;
+}
+#SubmitNftdetails{
+  width: 200px;
+  height: 45px;
+  font-family: sans-serif;
+  font-size: 20px;
+  box-shadow: 2px 2px bisque;
+}
+
+#mintCert{
+  border: 4px solid white;
+  // max-width: 2000px;
+  width: 950px;
+  // max-height: 1000px;
+  height: 600px;
+}
+#nftfiedTxt{
+  position: relative;
+  top: 180px;
+  color: blue;
+}
+#CertPrint{
+  position: relative;
+  top: -300px;
+  width: 630px;
+  color: black;
+  margin-left: 400px;
+  line-height: 2;
+}
+#SignatureTxt{
+  color: white;
+  position: relative;
+  top: -280px;
+  left: 450px;
+}
+#TokenIdtxt{
+  position: relative;
+  top: -330px;
+  color: white;
+  left: 900px;
+}
+#DownloadBtn{
+  width: 130px;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  position: relative;
+  top: -250px;
+  left: 650px;
+}
+#OfgradTxt{
+  color: blue;
+  position: relative;
+  top: 200px;
+  left: 630px;
+}
+#InputsLists{
+  list-style: none;
+  display: inline-flex;
+  gap: 40px;
+  margin-left: 100px;
+}
+#NameOfStu{
+  margin-left: 20px;
+}
+#StudentId{
+  margin-left: 35px;
+}
+#StuBrance{
+  margin-left: 38px;
+}
+#CreatorPrincipal,#StuPrincipal{
+  margin-left: 20px;
+}
+#Li2{
+  line-height: 5;
+}
+#startdate,#EndDate{
+  margin-left: 20px;
+}
+#Li1{
+  line-height: 5;
+}
+#CompleteSubmittedDetails{
+position: relative;
+top: -150px;
+margin-left: 100px;
+}
+
+#Proftxt{
+  font-family: sans-serif;
+  font-size: 45px;
+
+}
+////////////////////////////////////////////////////////////////////]
+li{
+  list-style: none;
+}
+#NFTForge{
+  font-family: sans-serif;
+  font-size: 65px;
+  color: wheat;
+  position: absolute;
+  top: 100px;
+  left: 160px;
+}
+#Certificate{
+  margin-top: 70px;
+}
+#FirstPageHead{
+  border: 5px solid blueviolet;
+  border-top-left-radius: 200px;
+}
+#ZeroHead{
+  border: 5px solid blueviolet;
+  border-top-left-radius: 200px;
+  height: 650px;
+  border-bottom-right-radius: 200px;
+  margin: 35px;
+}
+#MRHeading{
+  font-family: sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+#GetRew{
+  margin-left: 200px;
+}
+#gift1{
+  height: 80px;
+  margin-top: -60px;
+  margin-left: 500px;
+}
+#MintingCert{
+  margin-left: 300px;
+  margin-top: 70px;
+}
+#RealWorldLink{
+  margin-left: 300px;
+  margin-top: 90px;
+}
+#MainMintbtn{
+  border: 2px solid white;
+  width: 150px;
+  height: 30px;
+}
+#PrincProf{
+  margin-left: 100px;
+}
+#ProfHead{
+  border: 5px solid blueviolet;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 35px;
+  padding: 50px;
+}
+#Balancetxt{
+  margin-left: 100px;
+}
+#MintedNftsTxt{
+  margin-left: 100px;
+}
+td{
+  background-color: rgb(175, 158, 158);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+table tr{
+  border: 2px solid white;
+  padding: 5px;
+}
+table{
+  margin: 40px;
+}
+
+table thead tr {
+  border: 2px solid whitesmoke;
+}
+///////////////////////////////////////////////////////////////////////////////
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color:black;
+}
+.gift-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gift-box {
+  width: 50px;
+  height: 50px;
+  background: gold;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+.gift-box.disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+.close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.close-button:hover {
+  background-color: #0056b3;
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.loading-spinner {
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#RealBody{
+  border: 5px solid blue;
+  padding: 50px;
+
+}
+
+#MintAssetBtn{
+  border: 2px solid blue;
+  width: 160px;
+  font-size: 20px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1200px;
+}
+#MintassestBtn{
+  border: 2px solid white;
+  padding-right: 19px;
+  padding-left: 19px;
+  height: 30px;
+}
+#AssetInput input{
+  border: 2px solid blue;
+}
+#MintassestBtn{
+  margin-left: 400px;
+  margin-top: 60px;
+}
+#assetUserName{
+  margin-left: 100px;
+}
+#AssetName{
+  margin-left: 40px;
+}
+#AssetId{
+  margin-left: 90px;
+}
+#ImgScan{
+  border: 0;
+  width: 170px;
+  margin-left: 100px;
+}
+#MintassestBtn{
+  border: 2px solid blue;
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+}
+#assetbtninFirst{
+  border: 2px solid blue;
+  width: 140px;
+  // height: 30px;
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  padding: 7px;
+  position: absolute;
+  top: 45px;
+  left: 800px;
+}

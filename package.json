@@ -1,0 +1,33 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "NftCert",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/NftCert_frontend"
+  ],
+  "dependencies": {
+    "@dfinity/auth-client": "^2.0.0",
+    "@dfinity/principal": "^2.0.0",
+    "@zxing/library": "^0.21.2",
+    "canvas-confetti": "^1.9.3",
+    "html2canvas": "^1.4.1",
+    "quagga": "^0.6.16",
+    "react-barcode-reader": "^0.0.2",
+    "react-confetti": "^6.1.0",
+    "react-dropzone": "^14.2.3",
+    "react-router-dom": "^6.25.1",
+    "react-toastify": "^10.0.5",
+    "react-webcam": "^7.2.0",
+    "scanner-js": "^2.10.3"
+  }
+}
