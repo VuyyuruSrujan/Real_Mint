@@ -154,7 +154,7 @@ const handleCloseModal = () => {
                         </div>
                         {finalResult !== null && (
                             <>
-                                <h2>Congratulations! You have earned {finalResult} coins!</h2>
+                                <h2>Congratulations! You have earned {finalResult} Assetcert's!</h2>
                                 <button className="close-button" onClick={handleCloseModal}>
                                     Close
                                 </button>
