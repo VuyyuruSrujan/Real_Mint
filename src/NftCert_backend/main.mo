@@ -1,7 +1,4 @@
 import Nat "mo:base/Nat";
-import Nat8 "mo:base/Nat8";
-import Nat16 "mo:base/Nat16";
-import Nat32 "mo:base/Nat32";
 import Nat64 "mo:base/Nat64";
 import List "mo:base/List";
 import Array "mo:base/Array";
@@ -35,7 +32,7 @@ public query func ownerOfDip721(token_id: Types.TokenId) : async Types.OwnerResu
   };
 };
 
-public shared({ caller }) func safeTransferFromDip721(from: Principal, to: Principal, token_id: Types.TokenId) : async Types.TxReceipt {  
+public shared func safeTransferFromDip721(from: Principal, to: Principal, token_id: Types.TokenId) : async Types.TxReceipt {  
   if (to == null_address) {
     return #Err(#ZeroAddress);
   } else {
@@ -114,7 +111,7 @@ public query func getTokenIdsForUserDip721(user: Principal) : async [Types.Token
   return List.toArray(tokenIds);
 };
 
-public shared({ caller }) func mintDip721(to: Principal, metadata: Types.MetadataDesc) : async Types.MintReceipt {
+public shared func mintDip721(to: Principal, metadata: Types.MetadataDesc) : async Types.MintReceipt {
   let newId = Nat64.fromNat(List.size(nfts));
   let nft : Types.Nft = {
     owner = to;
@@ -166,7 +163,7 @@ public type MyMintTransdet = {
         return (Option.get(ledger.get(owner), 0));
     };
 
-    public shared ({ caller }) func transfer(from : Principal, to : Principal, amount : Nat) : async Result<(), Text> {
+    public shared func transfer(from : Principal, to : Principal, amount : Nat) : async Result<(), Text> {
       let balanceFrom = Option.get(ledger.get(from), 0);
       let balanceTo = Option.get(ledger.get(to), 0);
       if (balanceFrom < amount) {
@@ -208,7 +205,7 @@ public type MyMintTransdet = {
 
   stable var nftsAsset = List.nil<NftAsset>();
 
-  public shared({ caller }) func mintAsset(myPrin: Principal, metadata: MetadataDescAsset) : async Text {
+  public shared func mintAsset(myPrin: Principal, metadata: MetadataDescAsset) : async Text {
   let newId = Nat64.fromNat(List.size(nftsAsset));
   let nftdet : NftAsset = {
     owner = myPrin;

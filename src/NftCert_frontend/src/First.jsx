@@ -182,7 +182,7 @@ export default function First() {
     return (
         <>
             <div id="FirstPageHead">
-                <div id="NFTForge"><b><strong>VERI-MINT</strong></b></div>
+                <div id="NFTForge"><b><strong>VERIMINT</strong></b></div>
                 <div>
                     <button id="ConnectBtn" onClick={handleConnect}>CONNECT</button>
                 </div>
@@ -194,7 +194,7 @@ export default function First() {
                 <button id="MintBtn" onClick={handleMintButtonClick}>Mint</button>
                 <div className="image-container">
                     <ul id="Images">
-                        <li><img src="scl2.gif" id="ImgCerti" /></li>
+                        <li><img src="myChannel.gif" id="ImgCerti" /></li>
                     </ul>
                 </div>
                 <div id="inputs" ref={inputSectionRef}>
@@ -281,7 +281,7 @@ export default function First() {
                         </div>
                         {finalResult !== null && (
                             <>
-                                <h2>Congratulations! You have earned {finalResult} Assetcert's!</h2>
+                                <h2>Congratulations! You have earned {finalResult} VRT's!</h2>
                                 <button className="close-button" onClick={handleCloseModal}>
                                     Close
                                 </button>
