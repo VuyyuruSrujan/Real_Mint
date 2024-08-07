@@ -36,7 +36,7 @@ export default function Profile() {
                 <div id="Proftxt"><center><b><strong>Profile</strong></b></center></div>
                 <div>
                     <p id="PrincProf"><b><strong>Principal:</strong></b> {principal}</p>
-                    <p id="Balancetxt"><b><strong>Balance: {Balance.toString()} Veri Tokens</strong></b></p>
+                    <p id="Balancetxt"><b><strong>Balance: {Balance.toString()} RealWorldMint Tokens</strong></b></p>
                 </div>
                 <div>
                     <p id="MintedNftsTxt"><b><strong><u>Transaction Details</u></strong></b></p>

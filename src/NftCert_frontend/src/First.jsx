@@ -182,7 +182,7 @@ export default function First() {
     return (
         <>
             <div id="FirstPageHead">
-                <div id="NFTForge"><b><strong>VERIMINT</strong></b></div>
+                <div id="NFTForge"><b><strong>RealWorldMint</strong></b></div>
                 <div>
                     <button id="ConnectBtn" onClick={handleConnect}>CONNECT</button>
                 </div>
@@ -281,7 +281,7 @@ export default function First() {
                         </div>
                         {finalResult !== null && (
                             <>
-                                <h2>Congratulations! You have earned {finalResult} VRT's!</h2>
+                                <h2>Congratulations! You have earned {finalResult} RWMT's!</h2>
                                 <button className="close-button" onClick={handleCloseModal}>
                                     Close
                                 </button>
