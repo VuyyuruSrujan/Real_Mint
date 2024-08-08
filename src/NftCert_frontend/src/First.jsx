@@ -194,7 +194,7 @@ export default function First() {
                 <button id="MintBtn" onClick={handleMintButtonClick}>Mint</button>
                 <div className="image-container">
                     <ul id="Images">
-                        <li><img src="myChannel.gif" id="ImgCerti" /></li>
+                        <li><img src="myChannel2.gif" id="ImgCerti" /></li>
                     </ul>
                 </div>
                 <div id="inputs" ref={inputSectionRef}>
