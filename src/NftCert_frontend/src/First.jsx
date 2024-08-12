@@ -182,15 +182,18 @@ export default function First() {
     return (
         <>
             <div id="FirstPageHead">
-                <div id="NFTForge"><b><strong>RealWorldMint</strong></b></div>
-                <div>
-                    <button id="ConnectBtn" onClick={handleConnect}>CONNECT</button>
-                </div>
+                <nav id="navbar">
+                    <div id="NFTForge"><b><strong>RealWorldMint</strong></b></div>
+                    <ul id="nav-menu">
+                        <li><button id="ConnectBtn" onClick={handleConnect}>CONNECT</button></li>
+                        <li><button onClick={ProfileFunc} id='ProfileBtn'>Profile</button></li>
+                        <li><button onClick={Assetfunc} id='assetbtninFirst'>Myassets</button></li>
+                    </ul>
+                </nav>
+
                 <div id="MainOne">
                     <p id="MainHead"><b>Get Your Safe and Secure <span id="Nfttxt"><strong>NFT Certificates</strong></span></b></p>
                 </div>
-                <div><button onClick={ProfileFunc} id='ProfileBtn'>Profile</button></div>
-                <div><button onClick={Assetfunc} id='assetbtninFirst'>Myassets</button></div>
                 <button id="MintBtn" onClick={handleMintButtonClick}>Mint</button>
                 <div className="image-container">
                     <ul id="Images">

@@ -5,11 +5,15 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Profile from './Profile';
 import GiftBoxMultiplier from './Gift';
 import RealAssests from './RealAssests';
+import MintOrReal from './MintOrReal';
+import User from './User';
 export default function App() {
   return (
     <Router>
      <Routes>
-       <Route path="/" element={<First />} />
+     <Route path="/" element={<MintOrReal />} />
+     <Route path="/User" element={<User />} />
+       <Route path="/First" element={<First />} />
        <Route path="/Profile" element={<Profile />} />
        <Route path="/RealAssests" element={<RealAssests />} />
      </Routes>
