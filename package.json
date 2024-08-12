@@ -18,6 +18,7 @@
   "dependencies": {
     "@dfinity/auth-client": "^2.0.0",
     "@dfinity/principal": "^2.0.0",
+    "@psychedelic/plug-connect": "^0.2.0",
     "@zxing/library": "^0.21.2",
     "canvas-confetti": "^1.9.3",
     "html2canvas": "^1.4.1",
