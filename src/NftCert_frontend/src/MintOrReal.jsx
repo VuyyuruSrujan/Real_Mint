@@ -18,11 +18,11 @@ export default function MintOrReal(){
                 </div>
                 <div>
                     <h3 id="GetRew">Get rewarded for your every minting </h3>
-                    <p id="MintingCert">Click here to Mint Academic Student Certificates </p>
-                    <p id="RealWorldLink">Click here to get Real world assests Onchain</p>
+                    <p id="MintingCert">Click here to Mint Student Academic Credentials Or for RealWorldAsset Minting <button onClick={FirstRedi} id="RwCusbtn">custodian</button></p>
+                    <p id="RealWorldLink">Check Your minted Nft's here as a User <button onClick={UserRedirect} id="RWUserbtn">User</button></p>
                 </div>
-                <button onClick={FirstRedi}>custodian</button><br /><br />
-                <button onClick={UserRedirect}>User</button>
+                <br /><br />
+                
             </div>
         </>
     );

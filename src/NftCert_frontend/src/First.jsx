@@ -187,7 +187,7 @@ export default function First() {
                     <ul id="nav-menu">
                         <li><button id="ConnectBtn" onClick={handleConnect}>CONNECT</button></li>
                         <li><button onClick={ProfileFunc} id='ProfileBtn'>Profile</button></li>
-                        <li><button onClick={Assetfunc} id='assetbtninFirst'>Myassets</button></li>
+                        <li><button onClick={Assetfunc} id='assetbtninFirst'>Mint assets</button></li>
                     </ul>
                 </nav>
 

@@ -203,21 +203,21 @@ public type MyMintTransdet = {
     metadata: MetadataDescAsset;
   };
 
-  stable var nftsAsset = List.nil<NftAsset>();
+  // stable var nftsAsset = List.nil<NftAsset>();
 
-  public shared func mintAsset(myPrin: Principal, metadata: MetadataDescAsset) : async Text {
-  let newId = Nat64.fromNat(List.size(nftsAsset));
-  let nftdet : NftAsset = {
-    owner = myPrin;
-    Assetid = newId;
-    metadata = metadata;
-  };
+//   public shared func mintAsset(myPrin: Principal, metadata: MetadataDescAsset) : async Text {
+//   let newId = Nat64.fromNat(List.size(nftsAsset));
+//   let nftdet : NftAsset = {
+//     owner = myPrin;
+//     Assetid = newId;
+//     metadata = metadata;
+//   };
 
-  nftsAsset := List.push(nftdet, nftsAsset);
+//   nftsAsset := List.push(nftdet, nftsAsset);
 
-  transactionId += 1;
+//   transactionId += 1;
   
-  return "successfully minted"
-};
+//   return "successfully minted"
+// };
 
 };

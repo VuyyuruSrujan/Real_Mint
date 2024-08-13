@@ -43,22 +43,33 @@ export default function RealAssets() {
     setIsLoading(true); 
     var Nm = document.getElementById("assetUserName").value;
     var AssetType  =document.getElementById("AssetName").value;
-    var AssetId  = BigInt(document.getElementById("AssetId").value);
-    var userprincipal = Principal.fromText(principal);
-    var MetadataKeyValAsset = {
-        AuserName:Nm,
-        AssetName:AssetType,
-        AssetId:AssetId,
-        Image:new Uint8Array(imageBlob)
-      };
-      console.log(MetadataKeyValAsset);
-      var MetadataPartasset = {
-        key_val_data_Asset: [MetadataKeyValAsset]
-      };
-      
-      var MetadataDescAsset = [MetadataPartasset];
-     var minting = await NftCert_backend.mintAsset(userprincipal,MetadataDescAsset)
-     console.log(minting);
+    var AssetId  = document.getElementById("AssetId").value;
+    var custoPrin = Principal.fromText(principal);
+    var UserPrin = Principal.fromText(document.getElementById("OwnerPrin").value);
+    var RegDate = document.getElementById("RegDate").value;
+    // var MetadataKeyValAsset = {
+    //     AuserName:Nm,
+    //     AssetName:AssetType,
+    //     AssetId:AssetId,
+    //     Image:new Uint8Array(imageBlob)
+    //   };
+    var MetadataKeyVal = {
+      Name:Nm,
+      RollNo:AssetId,
+      Branch:AssetType,
+      Creator_Principal:custoPrin,
+      Owner:UserPrin,
+      Starting:RegDate,
+      Ending:RegDate
+    };
+      console.log(MetadataKeyVal);
+      var MetadataPart = {
+        key_val_data: [MetadataKeyVal]
+    };
+    var MetadataDesc = [MetadataPart];
+
+     var minting = await NftCert_backend.mintDip721(UserPrin,MetadataDesc)
+     console.log(" asset minting",minting);
      if(minting){
         alert("minted");
         handleShowModal();
@@ -112,9 +123,9 @@ const handleCloseModal = () => {
             Make your assets ON CHAIN
           </div>
         </center>
-        <div>
+        {/* <div>
           <button id="MintAssetBtn"> My assets </button>
-        </div>
+        </div> */}
         <div>
           <u>Fill yor asset Details:</u>
         </div><br /><br />
@@ -124,10 +135,16 @@ const handleCloseModal = () => {
           <label>Enter the type of Asset:</label>
           <input type="text" id="AssetName" /><br /><br />
           <label>Enter the asset id:</label>
-          <input type="Number" id="AssetId" /><br /><br />
+          <input type="Text" id="AssetId" /><br /><br />
+          <label>Custodian:</label>
+          <input type="Text" id="custoPrin" value={principal} readOnly /><br /><br />
+          <label>Owner:</label>
+          <input type="OwnPrin" id="OwnerPrin" /><br /><br />
           <label>Upload Asset Image:</label>
-          <input type="file" accept="image/*" onChange={handleImageUpload} id="ImgScan"/><br />
-          <button id="MintassestBtn" onClick={MintingAssests}>Mint my Asset</button>
+          <input type="file" accept="image/*" onChange={handleImageUpload} id="ImgScan"/><br /><br />
+          <label>Enter date:</label>
+          <input type="date" id="RegDate" /><br /><br />
+          <button id="MintassestBtn" onClick={MintingAssests}>Mint Asset</button>
         </div>
       </div>
 

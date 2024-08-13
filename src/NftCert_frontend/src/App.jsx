@@ -3,7 +3,6 @@ import { NftCert_backend } from 'declarations/NftCert_backend';
 import First from './First';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Profile from './Profile';
-import GiftBoxMultiplier from './Gift';
 import RealAssests from './RealAssests';
 import MintOrReal from './MintOrReal';
 import User from './User';
