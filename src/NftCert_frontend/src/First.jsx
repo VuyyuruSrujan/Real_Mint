@@ -184,10 +184,11 @@ export default function First() {
             <div id="FirstPageHead">
                 <nav id="navbar">
                     <div id="NFTForge"><b><strong>RealWorldMint</strong></b></div>
+                    <p id="TrustInEveryToken">-Trust in every token</p>
                     <ul id="nav-menu">
-                        <li><button id="ConnectBtn" onClick={handleConnect}>CONNECT</button></li>
-                        <li><button onClick={ProfileFunc} id='ProfileBtn'>Profile</button></li>
-                        <li><button onClick={Assetfunc} id='assetbtninFirst'>Mint assets</button></li>
+                        <li><button id="ConnectBtn" onClick={handleConnect}><u>CONNECT</u></button></li>
+                        <li><button onClick={ProfileFunc} id='ProfileBtn'><u>PROFILE</u></button></li>
+                        <li><button onClick={Assetfunc} id='assetbtninFirst'><u>MINTASSETS</u></button></li>
                     </ul>
                 </nav>
 

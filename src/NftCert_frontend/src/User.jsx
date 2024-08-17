@@ -48,12 +48,16 @@ export default function User() {
 
     async function GetNfts() {
         const token = document.getElementById("utokenNumber").value;
+        if(token!=""){
         try {
             const mynft = await NftCert_backend.getMetadataDip721(BigInt(token));
             console.log(mynft);
             SetMintNft(mynft.Ok); // Access the 'Ok' array directly
         } catch (error) {
             console.error("Error fetching NFT:", error);
+        }
+        }else{
+            alert("enter token id");
         }
     }
 
@@ -70,12 +74,13 @@ export default function User() {
 
     return (
         <>
+        <div id="Usersbd">
             <div>
                 <div>
                     <button id="ConnectBtn" onClick={handleConnect}>CONNECT</button>
                     <ul id="menubar">
-                        <li> Certificates </li>
-                        <li> Real world nft's </li>
+                        {/* <li> Certificates </li>
+                        <li> Real world nft's </li> */}
                     </ul>
                 </div>
                 <div>
@@ -85,8 +90,8 @@ export default function User() {
             </div>
             <div>
                 <label>Enter token id to get nft:</label>
-                <input type='Number' id="utokenNumber" required />
-                <button onClick={GetNfts}>Get my nft</button>
+                <input type='Number' id="utokenNumber" required /><br /><br />
+                <button onClick={GetNfts} id="GetMyNftBtn">Get my nft</button><br /><br />
             </div>
             <div id="Certificate1">
                 {MintNft.length > 0 && (
@@ -104,8 +109,9 @@ export default function User() {
                 )}
             </div>
             {MintNft.length > 0 && (
-                <button onClick={downloadCertificate}>Download Certificate</button>
+                <button onClick={downloadCertificate} id="DownUsBtn">Download Certificate</button>
             )}
+        </div>
         </>
     );
 }
