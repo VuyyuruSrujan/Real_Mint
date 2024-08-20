@@ -57,6 +57,8 @@ button[type="submit"] {
   // margin-top: 30px;
   background-color: transparent;
   border: none;
+  margin-left: 1000px;
+  margin-top: -500px;
 }
 #ConnectBtn:hover{
   // box-shadow: 2px 2px 40px 20px rgba(0, 0, 255, 0.7);
@@ -495,7 +497,7 @@ table thead tr {
 #DownUsBtn{
   margin-left: 650px;
   position: absolute;
-  top: 950px;
+  top: 1000px;
   background-color: transparent;
   color: white;
   // border-color: white;
@@ -537,4 +539,8 @@ table thead tr {
 #TrustInEveryToken{
   margin-left: 290px;
   margin-top: 83px;
+}
+#Usersbd{
+  border: 7px solid white;
+  padding: 100px;
 }

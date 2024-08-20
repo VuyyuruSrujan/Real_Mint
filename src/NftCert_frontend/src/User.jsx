@@ -77,7 +77,7 @@ export default function User() {
         <div id="Usersbd">
             <div>
                 <div>
-                    <button id="ConnectBtn" onClick={handleConnect}>CONNECT</button>
+                    <button id="ConnectBtn" onClick={handleConnect}><u>CONNECT</u></button>
                     <ul id="menubar">
                         {/* <li> Certificates </li>
                         <li> Real world nft's </li> */}
